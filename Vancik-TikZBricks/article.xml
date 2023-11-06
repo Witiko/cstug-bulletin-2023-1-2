@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article doi="48" language="sk" publication_type="full_text"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+  <titles>
+    <title>Pohľad <TeX/>ového nováčika na prezentáciu „Bricks and Jigsaw Pieces“ z TUGu 2022</title>
+  </titles>
+  <contributors>
+    <person_name contributor_role="author" sequence="first">
+      <given_name>Matúš</given_name>
+      <surname>Vančík</surname>
+    </person_name>
+  </contributors>
+  <pages>
+    <first_page>48</first_page>
+    <last_page>53</last_page>
+  </pages>
+  <additional-content>
+    <abstract>
+      <para>
+        V tomto článku sa bližšie pozrieme na dva nové <LaTeX/>ové balíčky, TikZbricks a jigsaw. Ako ešte len čerstvý používateľ <TeX/>u by som chcel pomocou vlastných experimentov preskúmať dizajn, jednoduchosť práce s balíčkami ako aj možnosti uplatnenia. Nakoniec by som pomocou tohto článku chcel vyzdvihnúť, prečo sú takéto balíčky v <TeX/>u potrebné.
+      </para>
+      <keywords>
+        TikZ, TikZbricks, jigsaw
+      </keywords>
+    </abstract>
+    <title><TeX/> Newbie Reports on the “Bricks and Jigsaw Pieces” Talk at TUG 2022</title>
+    <abstract>
+      <para>
+        The article deals with TikZbricks and jigsaw packages: their use, design, and possible applications. I look at these aspects of the packages through my own experimentation as a newish <TeX/> user and I show why such packages are needed in the world of <TeX/>.
+      </para>
+      <keywords>
+        TikZ, TikZbricks, jigsaw
+      </keywords>
+    </abstract>
+  </additional-content>
+  <xi:include href="citations.xml"/>
+</article>

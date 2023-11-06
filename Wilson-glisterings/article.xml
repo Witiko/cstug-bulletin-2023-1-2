@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article doi="54" language="cs" publication_type="full_text"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+  <titles>
+    <title>Mělo by to fungovat XIII</title>
+  </titles>
+  <contributors>
+    <person_name contributor_role="author" sequence="first">
+      <given_name>Peter</given_name>
+      <surname>Wilson</surname>
+    </person_name>
+    <person_name contributor_role="translator" sequence="additional">
+      <given_name>Jan</given_name>
+      <surname>Šustek</surname>
+    </person_name>
+  </contributors>
+  <pages>
+    <first_page>54</first_page>
+    <last_page>60</last_page>
+  </pages>
+  <additional-content>
+    <abstract>
+      <para>
+        Článek ukazuje několik způsobů, jak lze v <LaTeX/>u použít verbatim text uvnitř argumentu některých maker. Dále jsou ukázány možnosti, jak zkrátit sazbu textu na danou šířku či výšku.
+      </para>
+      <keywords>
+        Makra, verbatim argumenty, zkracování textu, <LaTeX/>
+      </keywords>
+    </abstract>
+    <title>It Might Work XIII</title>
+    <abstract>
+      <para>
+        This paper shows several ways in <LaTeX/> how to use verbatim text within argument of some macros. We also show how to truncate text to a given width or height.
+      </para>
+      <keywords>
+        Macros, verbatim arguments, truncating text, <LaTeX/>
+      </keywords>
+    </abstract>
+  </additional-content>
+  <xi:include href="citations.xml"/>
+</article>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<citation_list xmlns:bltx="http://biblatex-biber.sourceforge.net/biblatexml">
+  <citation>
+    <journal_title>TUGboat</journal_title>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Peter</given_name>
+        <surname>Wilson</surname>
+      </person_name>
+    </contributors>
+    <volume>32</volume>
+    <issue>3</issue>
+    <first_page>339</first_page>
+    <cYear>2011</cYear>
+    <article_title>Glisterings</article_title>
+    <additionalcontent>
+      <url cited="2011-12-01">https://tug.org/TUGboat/tb32-3/tb102glister.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Donald E.</given_name>
+        <surname>Knuth</surname>
+      </person_name>
+    </contributors>
+    <volume>A</volume>
+    <cYear>1984</cYear>
+    <series_title>Computers &amp; Typesetting</series_title>
+    <article_title>The TeXbook</article_title>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Donald</given_name>
+        <surname>Arseneau</surname>
+      </person_name>
+    </contributors>
+    <cYear>2001</cYear>
+    <article_title>truncate.sty: Truncate text to a specified width</article_title>
+    <additionalcontent>
+      <url cited="2011-12-01">https://ctan.org/pkg/truncate</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Donald</given_name>
+        <surname>Arseneau</surname>
+      </person_name>
+    </contributors>
+    <cYear>2008</cYear>
+    <article_title>Re: How to limit/cut off text after a number of lines?</article_title>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Will</given_name>
+        <surname>Robertson</surname>
+      </person_name>
+    </contributors>
+    <cYear>2008</cYear>
+    <article_title>Re: How to limit/cut off text after a number of lines?</article_title>
+  </citation>
+</citation_list>

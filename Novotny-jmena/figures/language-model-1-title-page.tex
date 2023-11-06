@@ -1,0 +1,29 @@
+\begin{tikzpicture}[
+  ->, % makes the edges directed
+  >=stealth', % makes the arrow heads bold
+  node distance=1.75cm, % specifies the minimum distance between two nodes. Change if necessary.
+  every state/.style={thick, fill=gray!10}, % sets the properties for each ’state’ node
+  initial text=$ $, % sets the text that appears on the start arrow
+  rotate=90, transform shape, % rotate the figure by 90 percent
+]
+\node[state, initial] (start) {\rotatebox{270}{$v_{29}$}};
+\node[state, right of=start] (pe) {\rotatebox{270}{$v_{30}$}};
+\node[state, right of=pe] (s) {\rotatebox{270}{$v_{31}$}};
+\node[state, right of=s] (-f) {\rotatebox{270}{$v_{32}$}};
+\node[state, above of=pe] (maxi) {\rotatebox{270}{$v_{33}$}};
+\node[state, below of=s, accepting] (end) {\rotatebox{270}{$v_{34}$}};
+
+\draw (start) edge[line width=0.5pt, bend left=45] node[above, rotate=45]{\rotatebox{180}{maxi}} node[below, rotate=45]{\rotatebox{180}{1}} (maxi);
+\draw (start) edge[line width=1pt] node[above]{\rotatebox{270}{\raisebox{-8.5pt}{pe}}} node[below]{\rotatebox{270}{2}} (pe);
+\draw (maxi) edge[line width=1pt, bend right=35] node[above, rotate=90]{\rotatebox{180}{pe}} node[below, rotate=90]{\rotatebox{180}{2}} (pe);
+\draw (maxi) edge[line width=0.5pt, loop, looseness=5] node[above]{\rotatebox{270}{\raisebox{1pt}{li}}} node[below]{\rotatebox{270}{1}} (maxi);
+\draw (pe) edge[line width=1.5pt] node[above]{\rotatebox{270}{\raisebox{-6.5pt}{s}}} node[below]{\rotatebox{270}{3}} (s);
+\draw (pe) edge[line width=0.5pt, bend left=85] node[above]{\rotatebox{270}{\raisebox{-8.5pt}{js}}} node[below]{\rotatebox{270}{1}} (s);
+\draw (s) edge[line width=0.5pt, bend left=85] node[above]{\rotatebox{270}{\raisebox{-6.5pt}{e}}} node[below]{\rotatebox{270}{1}} (pe);
+\draw (s) edge[line width=1pt] node[above]{\rotatebox{270}{\raisebox{-6pt}{\textvisiblespace f}}} node[below]{\rotatebox{270}{2}} (-f);
+\draw (-f) edge[line width=0.5pt, bend right=27.5] node[below, rotate=-27.5]{i} node[above, rotate=-27.5]{1} (maxi);
+\draw (s) edge[line width=0.5pt, bend left=45] node[above, rotate=90]{\rotatebox{180}{$\epsilon$}} node[below, rotate=90]{\rotatebox{180}{1}} (end);
+\draw (-f) edge[line width=0.5pt, bend left=55] node[above, rotate=45]{\rotatebox{180}{ík}} node[below, rotate=45]{\rotatebox{180}{1}} (end);
+\draw (pe) edge[line width=0.5pt, bend right=55] node[below, rotate=-45]{k} node[above, rotate=-45]{1} (end);
+
+\end{tikzpicture}

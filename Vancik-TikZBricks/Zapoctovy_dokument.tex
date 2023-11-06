@@ -1,0 +1,265 @@
+\RequirePackage{luatex85}
+\makeatletter
+\disable@package@load{fontenc}
+\makeatother
+\documentclass{csbulletin}
+\usepackage[utf8]{inputenc}
+\usepackage[all]{nowidow}
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,
+  style=iso-numeric,
+  citestyle=numeric-comp,
+  sortlocale=sk,
+  autolang=other,
+  bibencoding=UTF8,
+  mincitenames=2,
+  maxcitenames=2,
+]{biblatex}
+
+\addbibresource{Zapocotova_bibliografia.bib}
+\usepackage{graphicx}
+\usepackage{tikzbricks}
+\usepackage{jigsaw}
+\usepackage{fancyvrb}
+\usepackage[
+  implicit=false,
+  hidelinks,
+]{hyperref}
+\usepackage{luavlna,lua-widow-control}
+\newbox\verbbox
+
+\newcommand\TikZ{Ti\textit{k}Z}
+
+\begin{document}
+
+\selectlanguage{slovak}
+
+\shorthandoff{-}
+
+\hyphenation{scrip-tom}
+
+\title{Pohľad \TeX ového nováčika na prezentáciu ,,Bricks and Jigsaw Pieces`` z~TUGu 2022}
+\EnglishTitle{\TeX{} Newbie Reports on the ``Bricks and Jigsaw Pieces'' Talk at TUG 2022}
+\author{Matúš Vančík}
+\podpis{Matúš Vančík\\ 514505@mail.muni.cz}
+\maketitle[1ex]
+
+\begin{abstract}
+V tomto článku sa bližšie pozrieme na dva nové \LaTeX ové balíčky, \emph{\TikZ bricks} a \emph{jigsaw}. Ako ešte len čerstvý používateľ \TeX u by som chcel pomocou vlastných experimentov preskúmať dizajn, jednoduchosť práce s balíčkami ako aj možnosti uplatnenia. Nakoniec by som pomocou tohto článku chcel vyzdvihnúť, prečo sú takéto balíčky v \TeX u potrebné.
+\end{abstract}
+\klucoveslova: \emph{\TikZ}, \emph{\TikZ bricks}, \emph{jigsaw}
+\section{Úvod}
+
+\singlechars{slovak}{AaIiVvOoUuSsZzKk}
+
+Pri pozeraní prezentácií z každoročnej konferencie používateľov \TeX u (TUG 2022), ma hneď zaujala prezentácia balíkov \emph{\TikZ bricks} a \emph{jigsaw} od Sam Carterovej~\cite{video}. Tieto balíčky boli pre mňa, nového používateľa \TeX u, veľkým oživením inak monotónneho \LaTeX u. Do tej chvíle som si nevedel predstaviť, že niečo takéto kreatívneho je možné v \LaTeX u vytvoriť. Vedel som o rôznych možnostiach na vytvorenie grafov a vkladaní fotografií do dokumentov, ale táto možnosť, vytvárať niečoho kreatívne a nové pomocou \LaTeX ových príkazov, bola pre mňa doposiaľ neznáma. Zároveň, ,,čisto`` náhodná podoba kociek balíčku \emph{\TikZ bricks} s kockami Lego ma vtiahla naspäť do mojich detských čias. Mohol som sa hrať s puzzle a legom v \TeX u!
+
+Zaujímalo ma, či je možné praktické použitie týchto balíčkov. Je možné použiť ich v akademickej sfére pri písaní vedeckých článkov alebo si nájdu svoje uplatnenie ako prostriedky na vzdelávanie nových používateľov \TeX u? Je takýto balík vôbec potrebný vo svete \TeX u? To boli len niektoré otázky, ktoré mi prebehli hlavou pri pozeraní prezentácie Sam Carterovej.
+Pri hľadaní odpovedí na moje otázky som sa dostal na stránku \href{https://www.ctan.org/}{CTAN}, táto skratka odkazuje na zložitú sieť archívov \TeX u. Na tejto stránke som sa po prvýkrát ponoril do rôznych zaujímavých a vizuálne kreatívnych balíčkov \TeX u. Preto odporúčam každému novému používateľovi \TeX u navštíviť túto stránku a konkrétne by som odporúčal laické preskúmanie balíčku \emph{\TikZ}, do ktorého patria taktiež balíky \emph{\TikZ bricks} a \emph{jigsaw}.\\
+
+\begin{center}
+    \begin{tikzpicture}
+    \brick[color=orange,scale=0.6]{4}{2}
+    \end{tikzpicture}
+\end{center}
+
+\section{Stav balíkov \emph{\TikZ bricks} a \emph{jigsaw}}
+Počas písania tohto článku bol balík \emph{\TikZ bricks} dostupný vo verzii 0.4. V tejto verzii ide o malý \LaTeX ový balíček na kreslenie Lego kociek pomocou \emph{\TikZ}. Používateľ môže ľubovoľne meniť farbu, tvar, veľkosť a uhol pohľadu jednotlivých kociek. Taktiež môže zobrazovať len jednu kocku alebo vytvoriť celú stenu z viacerých jednotlivých kociek. Stena sa stavia smerom zdola nahor a sprava doľava, inými slovami, začína sa z pravého dolného rohu. Balík obsahuje aj skript \texttt{img2bricks} od Scotta Pakina \cite{img2bricks}, ktorý umožňuje zaradiť jednoduché PNG obrázky do štruktúr \emph{\TikZ bricks}, čo hlavne ocenia používatelia, ktorí by chceli z kociek vytvoriť obrázok na základe nejakej predlohy.
+
+Jednu kocku je možné vytvoriť pomocou príkazu \verb|\brick|, pričom prvý argument špecifikuje dĺžku kocky a druhý argument ovplyvňuje šírku kocky. Taktiež je možné nastaviť farbu kocky pomocou argumentu \texttt{color} a celková veľkosť kocky sa dá nastaviť pomocou argumentu \texttt{scale}.\\
+
+\setbox\verbbox=\vbox{\hsize=3in
+\begin{Verbatim}
+    \begin{tikzpicture}
+    \brick[color=orange,scale=0.6]{4}{2}
+    \end{tikzpicture}
+\end{Verbatim}
+}
+\begin{tabular}{m{1.4in}m{2in}}
+    \begin{tikzpicture}
+    \brick[color=orange,scale=0.6]{4}{2}
+    \end{tikzpicture} & \box\verbbox \\
+\end{tabular}
+
+\noindent
+Stenu z kociek môžeme vytvoriť pomocou prostredia \verb|wall| a príkazu \verb|\wallbrick|, ktorým je možné stavať jednotlivé kocky vedľa seba. Ak chceme v stene vytvoriť dieru, ktorá môže slúžiť ako pomyslné dvere, používame príkaz \verb|\addtocounter| s argumentmi \texttt{brickx}, \texttt{bricky} a \texttt{brickz}, ktorými určujeme smer diery.\\
+
+\setbox\verbbox=\vbox{\hsize=4in
+\begin{Verbatim}
+\begin{wall}[scale=0.5]
+\wallbrick[color=yellow]{1}{1}
+\wallbrick[color=black]{2}{1}
+\wallbrick[color=yellow]{1}{1}
+\addtocounter{brickx}{2}
+\wallbrick[color=orange]{2}{1}
+\newrow
+\wallbrick[color=orange]{2}{2}
+\wallbrick[color=gray]{6}{1}
+\end{wall}
+\end{Verbatim}
+}
+\begin{tabular}{m{2in}m{3in}}
+\begin{wall}[scale=0.6]
+    \wallbrick[color=yellow]{1}{1}
+    \wallbrick[color=black]{2}{1}
+    \wallbrick[color=yellow]{1}{1}
+    \addtocounter{brickx}{2}
+    \wallbrick[color=orange]{2}{1}
+    \newrow
+    \wallbrick[color=orange]{2}{2}
+    \wallbrick[color=gray]{6}{1}
+    \end{wall} & \box\verbbox \\
+\end{tabular}
+
+Balíček \emph{jigsaw} sa počas písania tohto článku nachádzal vo verzii 0.3. Ide o malý \LaTeX ový balík na kreslenie dielikov skladačky puzzle pomocou \emph{\TikZ}. Pomocou tohto balíčku je možné kresliť jednotlivé kúsky, pričom sme schopní upravovať ich tvar, vytvárať rôzne vzory jednotlivých kusov skladačky alebo vygenerovať celú skladačku. Následne sa dá na takto vygenerovanú skladačku vložiť obrázok.
+
+Samostatný kúsok puzzle je možné vytvoriť pomocou príkazu \verb|\piece|. Príkaz má štyri premenné \textit{$\langle$spodná$\rangle$, $\langle$pravá$\rangle$, $\langle$vrchná$\rangle$} a \textit{$\langle$ľavá$\rangle$}, ktoré môžu nadobúdať tieto hodnoty: 0 = hrana, $-$1 = výbežok, 1 = priehlbina.\\% Pomocou týchto hodnôt určujeme vzhľad jednotlivej hrany puzzla.\\
+
+\setbox\verbbox=\vbox{\hsize=4in
+\begin{Verbatim}
+\begin{tikzpicture}
+\piece{1}{-1}{0}{1}
+\end{tikzpicture}
+\end{Verbatim}
+}
+\begin{tabular}{m{2in}m{3in}}
+\begin{tikzpicture}
+\piece{1}{-1}{0}{1}
+\end{tikzpicture} & \box\verbbox \\
+\end{tabular}
+
+\noindent
+Pomocou prostredia \verb|scope| môžeme manuálne vytvoriť celé puzzle. Jedno prostredie \texttt{scope} reprezentuje jeden kúsok skladačky a pomocou argumentov ako napríklad \texttt{xshift} sa vieme posunúť na miesto, kde chceme vytvoriť ďalší kúsok. Taktiež môžeme použiť voliteľný argument na zmenu farby jednotlivých puzzlí.\\
+
+\setbox\verbbox=\vbox{\hsize=3in
+\begin{Verbatim}
+\begin{tikzpicture}
+\begin{scope}
+\piece[orange]{0}{0}{-1}{-1}
+\end{scope}
+\begin{scope}[xshift=1cm]
+\piece[yellow]{0}{-1}{-1}{-1}
+\end{scope}
+\begin{scope}[yshift=-1cm]
+\piece[black]{0}{-1}{-1}{1}
+\end{scope}
+\end{tikzpicture}
+\end{Verbatim}
+}
+
+\begin{tabular}{m{2in}m{1in}}
+\begin{tikzpicture}
+\begin{scope}
+\piece[orange]{0}{0}{-1}{-1}
+\end{scope}
+\begin{scope}[xshift=1cm]
+\piece[yellow]{0}{-1}{-1}{-1}
+\end{scope}
+\begin{scope}[yshift=-1cm]
+\piece[black]{0}{-1}{-1}{1}
+\end{scope}
+\end{tikzpicture}
+& \box\verbbox
+\end{tabular}
+
+\noindent
+Tento spôsob však môže byť zdĺhavý a chybový. Preto ja osobne preferujem príkaz \verb|\tile|\textit{\textup{\texttt{[}}$\langle$farba$\rangle$\textup{\texttt{]}}\textup{\texttt{\{}}$\langle$spodná$\rangle$\textup{\texttt{\}}}\textup{\texttt{\{}}$\langle$pravá$\rangle$\textup{\texttt{\}}}\textup{\texttt{\{}}$\langle$vrchná$\rangle$\textup{\texttt{\}}}\textup{\texttt{\{}}$\langle$ľavá$\rangle$\textup{\texttt{\}}}}, ktorý môže byť použitý aj mimo prostredia \texttt{tikzpicture}. Pomocou tohto príkazu môžeme jednotlivé riadky skladačky vyskladať.\\
+
+\setbox\verbbox=\vbox{\hsize=4in
+\begin{Verbatim}
+\tile[orange]{1}{1}{0}{0}%
+\tile[black]{1}{-1}{0}{-1}%
+\tile[yellow]{1}{0}{0}{1}
+\tile[yellow]{1}{-1}{-1}{0}%
+\tile[orange]{1}{-1}{-1}{1}%
+\tile[black]{-1}{0}{-1}{1}
+\tile[black]{0}{-1}{-1}{0}%
+\tile[yellow]{0}{-1}{-1}{1}%
+\tile[orange]{0}{0}{1}{1}
+\end{Verbatim}
+}
+\begin{tabular}{m{2in}m{3in}}
+\tile[orange]{1}{1}{0}{0}%
+\tile[black]{1}{-1}{0}{-1}%
+\tile[yellow]{1}{0}{0}{1}
+\tile[yellow]{1}{-1}{-1}{0}%
+\tile[orange]{1}{-1}{-1}{1}%
+\tile[black]{-1}{0}{-1}{1}
+\tile[black]{0}{-1}{-1}{0}%
+\tile[yellow]{0}{-1}{-1}{1}%
+\tile[orange]{0}{0}{1}{1} & \box\verbbox \\
+\end{tabular}
+
+Ak chceme automaticky vygenerovať celú skladačku, stačí nám použiť len príkaz \verb|\jigsaw|\textit{\textup{\texttt{\{}}$\langle$šírka$\rangle$\textup{\texttt{\}}}\textup{\texttt{\{}}$\langle$výška$\rangle$\textup{\texttt{\}}}}. Pomocou čísel zvolíme počet jednotlivých dielikov, ktoré budú určovať šírku a výšku výsledného puzzle.\\
+
+\setbox\verbbox=\vbox{\hsize=4in
+\begin{Verbatim}
+\begin{tikzpicture}
+\jigsaw{4}{3}
+\end{tikzpicture}
+\end{Verbatim}
+}
+\begin{tabular}{m{2in}m{3in}}
+\begin{tikzpicture}
+\jigsaw{4}{3}
+\end{tikzpicture} & \box\verbbox \\
+\end{tabular}\\
+
+O ďalších možnostiach týchto balíčkov, ktoré som nespomenul vyššie, si môžete prečítať v dokumentáciách napísaných Sam Carterovou \cite{TikZBricks, TikZbricksCTAN, Jigsaw, JigsawCTAN}.
+
+\section{Experimentovanie}
+Ako bolo možné vidieť v predchádzajúcej časti článku, práca s balíčkami je veľmi jednoduchá a intuitívna. V tejto sekcii s balíkmi \emph{\TikZ bricks} a \emph{jigsaw} experimentujem s cieľom vytvoriť zložitejšie obrázky.
+
+\subsection{Balíček \emph{\TikZ bricks}}
+Medzi najzaujímavejšie experimenty z tohto balíčku považujem skript \texttt{img2bricks}, ktorý sa nachádza v githubovom repozitári \emph{\TikZ bricks} \cite{img2bricks}. Ide o pythonový script na premenu PNG obrázkov na \TeX ové príkazy, ktoré replikujú daný PNG obrázok pomocou balíka \emph{\TikZ bricks}. Na spustenie scriptu je potrebné mať pythonový balíček Pillow, ktorý nainštalujeme príkazom \texttt{pip install Pillow}. Príkazom \texttt{./img2bricks }$\langle$\textit{PNG obrázok}$\rangle$\texttt{ -o obrazok.tex} vznikne samostatný \LaTeX ový dokument \textit{obrazok.tex}. Tento dokument môže následne používateľ preložiť \LaTeX om, vďaka čomu získa obrázok vo formáte PDF. Alternatívne je možné skopírovať kód v prostredí \verb|wall| a vložiť ho do svojho vlastného \LaTeX ového dokumentu.
+
+Prekážkou bolo nájsť vhodné rozmery vstupných obrázkov, ktoré by so scriptom pracovali najlepšie. Pomocou experimetov som zistil, že najvhodnejšie obrázky majú rozmer $30\times30$ pixelov. Z takýchto obrázkov bolo možné vygenerovať detailné \TeX ové príkazy. Pri väčších obrázkoch vznikne kód, ktorý sa neoplatí prenášať do \TeX u, pretože vytvorený obrázok bude až moc veľký na to, aby bol použiteľný v bežnom dokumente. Na obrázku~\ref{fig:experiment-tree} vidíte obrázok stromu, ktorý som vygeneroval príkazom \texttt{img2bricks} počas svojich experimentov.
+
+\begin{figure}[h]
+    \begin{minipage}{\linewidth}
+    \centering
+    \includegraphics[width=2cm]{simpletree-removebg-preview.png}\qquad
+    \input experiment-tree\relax
+    \end{minipage}
+    \caption{PNG obrázok (vľavo), z ktorého som generoval skriptom \texttt{img2bricks} \TeX ové príkazy balíka \emph{\TikZ bricks} (vpravo).}
+    \label{fig:experiment-tree}
+\end{figure}
+
+\vspace*{-0.2cm}
+
+\subsection{Balíček \emph{jigsaw}}
+
+Experimentovanie pomocou balíčku \emph{jigsaw} považujem za menej príjemné, hlavne z dôvodu monotónnosti a časovej náročnosti, keď som sa snažil vygenerovať puzzle podľa svojich vlastných predstáv. Na druhej strane je automatická generácia pomocou príkazu \textit{\emph{jigsaw}} veľmi jednoduchá a bezproblémová. Na obrázku~\ref{fig:logo} vidíte puzzle s logom Fakulty informatiky Masarykovej univerzity, ktoré som vygeneroval pomocou balíka \emph{jigsaw} počas svojich experimentov.
+
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+    \clip (0,0) rectangle (6,6);
+    \node at (3,3) {%
+    \includegraphics[width=5cm,height=5cm]{fi-logo}%
+    };
+    \jigsaw{6}{6}
+    \end{tikzpicture}
+    \caption{Logo Fakulty informatiky Masarykovej univerzity vytvorené pomocou balíka \emph{jigsaw}.}
+    \label{fig:logo}
+\end{figure}
+
+\vspace*{-0.2cm}
+
+\section{Myšlienky}
+Obidva balíky sa majú ešte kam posunúť v kvalite používania, ale už v týchto skorých štádiách vývoja sú použiteľné. Majú rôzne možnosti uplatnenia, najviac však na vizuálne skrášlenie textu.
+Balíky, ako tieto, posúvajú hranicu možností \TeX u, ako som ho doteraz poznal, a hrajú významnú úlohu pri zaujatí nováčikov ako aj ľudí, ktorí predtým nemali ani poňatia o \TeX u.
+
+\vspace*{-0.2cm}
+
+\begingroup
+\sloppy
+\printbibliography
+\endgroup
+
+\begin{summary}
+The article deals with \emph{\TikZ bricks} and \emph{jigsaw} packages: their use, design, and possible applications. I look at these aspects of the packages through my own experimentation as a newish \TeX{} user and I show why such packages are needed in the world of \TeX.
+\keywords: \emph{\TikZ}, \emph{\TikZ bricks}, \emph{jigsaw}
+\end{summary}
+\end{document}

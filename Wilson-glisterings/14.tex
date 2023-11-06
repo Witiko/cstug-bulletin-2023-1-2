@@ -1,0 +1,436 @@
+\let\orilooseness\looseness
+\documentclass[oldcsbabel]{csbulletin}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\usepackage{color}
+\usepackage{truncate}
+% \setcounter{page}{8}
+
+\usepackage[implicit=false, hidelinks]{hyperref}
+
+\usepackage[
+  backend=biber,
+  style=iso-numeric,
+  sortlocale=cs,
+  autolang=other,
+  bibencoding=UTF8,
+  maxnames=3,
+]{biblatex}
+\DefineBibliographyStrings{czech}{
+  urlseen = {vid\adddot},
+}
+\addbibresource{14.bib}
+
+% Hack for hyperref
+\mubytein 0
+% \usepackage[pdftitle=Sazba odstavcu do textovych oblasti,
+%   pdfauthor=Jan Sustek,bookmarks=false]{hyperref}
+\usepackage{url}
+
+\DefineShortVerb\|
+%\def\soub#1{{\sc#1}}
+\usepackage[utf8]{inputenc}
+
+% \def\ts#1{{\tt\char`\\name\char`\{ts#1$i$\char`\}}}
+{\catcode`\^=12\gdef\ss{^^}}
+\fvset{numbers=left,firstnumber=last,numbersep=3pt,
+  xleftmargin=15pt}
+
+\def\p#1{\texttt{\char`\\#1}}
+\def\uv#1{\char18 #1\char16 }
+\def\={\discretionary{-}{-}{-}}
+\let\phi\varphi
+\def\eqref#1{{\rm(\ref{#1})}}
+\def\emph#1{{\sl#1\/}}
+\def\soub#1{{\sf#1}}
+
+\input supp-pdf
+
+\clubpenalty10000 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% fancyvrb hack - JS
+\makeatletter
+\def\FV@ListVSpace{%
+  \@topsepadd\medskipamount % \topsep
+  % z nejakeho duvodu se uvnitr Verbatim nuluje \topsep
+  \if@noparlist\advance\@topsepadd\partopsep\fi
+  \if@inlabel
+    \vskip\parskip
+  \else
+    \if@nobreak
+      \vskip\parskip
+      \clubpenalty\@M
+    \else
+      \addpenalty\@beginparpenalty
+      \@topsep\@topsepadd
+      \advance\@topsep\parskip
+      \addvspace\@topsep
+    \fi
+  \fi
+  \global\@nobreakfalse
+  \global\@inlabelfalse
+  \global\@minipagefalse
+  \global\@newlistfalse}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\casopis#1{{\sl#1\/}}
+\def\clanek#1{{\sl#1\/}}
+\def\balicek#1{{\sf#1\/}}
+\def\<#1>{$\langle\hbox{\sl#1\/}\rangle$}
+
+\def\basnicka#1#2#3{\par\medskip
+  \vbox{\leftskip.33\hsize \rightskip0pt plus 1cm \noindent#1\par
+  \leftskip0pt plus1fill \rightskip0pt\relax
+  \selectlanguage{english}%
+  {\sl#2\/}\par{\sc#3}\par}\medskip}
+
+\def\ctt{{\tt comp.text.tex}}
+\def\th{{\tt texhax}}
+
+\def\JSvfil{\vfil}
+\def\JSvss{\vskip0ptminus12pt}
+\def\JSbreak{\break}
+
+\let\PRESKOC\iffalse
+\let\COKSERP\fi
+
+\begin{document}
+\title
+  {Mělo by to fungovat XIII}
+\EnglishTitle{It Might Work XIII}
+\author{Peter Wilson}
+\podpis{Peter Wilson, \url{herries.press@earthlink.net}\\*
+  12 Sovereign Close\\*
+  Kenilworth, CV8~1SQ, UK}
+%\podpis{Jan Šustek, \url{jan.sustek@osu.cz}\\*
+%  Ostravská univerzita, Přírodovědecká fakulta,
+%  Katedra matematiky\\*
+%  30.~dubna~22,
+%  CZ-701~03 Ostrava, Czech Republic}
+
+\maketitle[3pt]
+
+\begin{abstract}
+Článek ukazuje několik způsobů, jak lze v~\LaTeX u použít verbatim text uvnitř argumentu některých maker. Dále jsou ukázány možnosti, jak zkrátit sazbu textu na danou šířku či výšku.
+\end{abstract}
+\klicovaslova: Makra, verbatim argumenty, zkracování textu, \LaTeX
+
+\makeatletter
+\def\@thefnmark{}\@footnotetext{Z~anglického originálu
+\clanek{Glisterings} \cite{GLISTER14} přeložil Jan Šustek.}
+\makeatother
+
+\basnicka{\dots Cloath'd all in glistering coats,\\
+    which made a shew\dots}
+  {Poems and Fancies}{Margaret Cavendish}
+
+Cílem tohoto
+seriálu
+%článku
+je ukázat čtenáři krátké kousky kódu,
+které mohou vyřešit některé z~jeho problémů. Doufám, že situaci
+ještě více nezkomplikuji v~důsledku mých chyb.
+Opravy, poznámky a návrhy na změny budou vždy vítány.
+
+\basnicka{Sir, I have found you an argument,\\
+    but I am not obliged to find you an
+    understanding.}
+  {\noindent}{Samuel Johnson}
+
+\section{Verbatim argumenty}
+
+Nedávno jsem byl upozorněn na problém, že verbatim text nemůže být použitý jako argument makra. Když například chceme vysázet text v~zarámované \texttt{minipage}, lze to udělat jednoduše použitím prostředí \texttt{minipage} uvnitř argumentu makra \p{fbox}.
+
+\begin{Verbatim}
+\fbox{\begin{minipage}{0.97\columnwidth}
+    Text uvnitř zarámované minipage
+  \end{minipage}}
+\end{Verbatim}
+
+\noindent
+Toto funguje bez problémů až do doby, kdy uvnitř \texttt{minipage} použijeme verbatim text. Potom dostaneme zmatené chybové zprávy, a to i přesto, že bez použití rámečku vše uvnitř \texttt{minipage} funguje.
+
+\LaTeX\ disponuje makrem \p{newsavebox}, s~jehož pomocí lze uložit vysázený text a ten pak použít prostřednictvím makra \p{usebox}.
+
+\medskip
+
+\newsavebox{\minibox}
+\newenvironment{framedminipage}[2][c]{%
+  \begin{lrbox}{\minibox}
+    \begin{minipage}[#1]{#2}}%
+  {\end{minipage}\end{lrbox}
+    \noindent\fbox{\usebox{\minibox}}}
+\let\orifootnote\footnote
+
+\begin{framedminipage}{0.97\columnwidth}
+Zde je uvedena definice prostředí \texttt{framedminipage}, které umožňuje použít verbatim text uvnitř rámečku.%
+\stepcounter{footnote}%
+\expandafter\xdef\csname @thefnmark\endcsname{\thefootnote}%
+\csname @makefnmark\endcsname
+\xdef\JSfnmarkI{\csname @thefnmark\endcsname}
+\begin{Verbatim}[commandchars=/()]
+\newsavebox{\minibox}
+\newenvironment{framedminipage}[2][c]{%
+  \begin{lrbox}{\minibox}
+    \begin{minipage}[#1]{#2}}%
+  {\end{minipage}\end{lrbox}
+    \noindent\fbox{\usebox{\minibox}}}/label(l5)
+\end{Verbatim}
+Při sazbě tohoto rámečku mělo prostředí \texttt{minipage} šířku rovnu 97\,\% šířky okolní sazby.
+\begin{Verbatim}
+\begin{framedminipage}{0.97\columnwidth}
+  ...
+\end{framedminipage}
+\end{Verbatim}
+\end{framedminipage}
+\makeatletter
+\def\@thefnmark{\JSfnmarkI}\@footnotetext{V~původním článku nebyl na řádku~\ref{l5} použit příkaz \p{noindent}, což mělo za následek, že makro \p{fbox} při přechodu z~vertikálního módu zahájilo odstavec a vložilo odstavcovou zarážku, což posunulo celý rámeček doprava. (pozn.~překl.)}
+\makeatother
+
+\medskip
+
+Prostředí \texttt{lrbox} je analogií \LaTeX ových maker \p{savebox} a \p{sbox}. Zatímco dovnitř argumentu makra nelze přímo vložit verbatim text, dovnitř těla prostředí jej vložit lze. V~uvedeném kódu se nejprve deklaruje registr \p{minibox} typu box, do nějž lze uložit vysázený text. Dále je definováno prostředí \texttt{framedminipage}, a to podobně jako prostředí \texttt{minipage}, včetně nepovinného argumentu určujícího vertikální umístění sazby. Na začátku prostředí \texttt{framedminipage} se zahájí prostředí \texttt{lrbox} a \texttt{minipage} a na jeho konci se zase obě tato prostředí ukončí. Vysázený obsah \texttt{minipage} se tak uloží do registru \p{minibox}, přičemž si musíme uvědomit, že verbatim text už je uvnitř \p{minibox} vysázený. Poté se obsah registru \p{minibox} jen vloží do makra \p{fbox}.
+
+\TeX book~\cite[str.~363]{tb} definuje makro \p{footnote} tak, aby jeho argument mohl obsahovat verbatim text. Knuth píše, že makro je propracované a používá několik triků. Já tomu makru nerozumím, ale ukážu zde jeho hlavní myšlenku. Pro jednoduchost makro \p{verbtext} pouze vysází svůj argument. Nejsem si jistý, zda jsem správně umístil makra \p{color@...}, protože nic podobného v~původních Knuthových makrech nebylo.
+
+\makeatletter
+\long\def\verbtext{\vtintro\futurelet\next\vte@t}
+\def\vte@t{\ifcat\bgroup\noexpand\next
+    \let\next\vt@@t
+  \else \let\next\vt@t\fi \next}
+\def\vt@@t{\bgroup\aftergroup\vtend\let\next}
+\def\vt@t#1{%
+  \color@begingroup
+  #1\vtmid
+  \color@endgroup}
+\let\vtintro\relax
+\let\vtmid\relax
+\let\vtend\relax
+\makeatother
+
+\begin{Verbatim}[commandchars=/()]
+\makeatletter
+\long\def\verbtext{\vtintro\futurelet\next\vte@t}
+\def\vte@t{\ifcat\bgroup\noexpand\next/label(l6)
+    \let\next\vt@@t
+  \else \let\next\vt@t\fi \next}
+\def\vt@@t{\bgroup\aftergroup\vtend\let\next}
+\def\vt@t#1{%
+  \color@begingroup
+  #1\vtmid
+  \color@endgroup}
+\let\vtintro\relax
+\let\vtmid\relax
+\let\vtend\relax
+\makeatother
+\end{Verbatim}
+
+\noindent
+Makra \p{vtintro} a \p{vtend} se expandují před a~za argumentem a jejich nadefinováním je možné dělat různé triky. Může se stát, že i~definovat makro \p{vtmid} bude užitečné.%
+  \footnote{Na řádku~\ref{l6} se testuje, zda je argument makra \p{verbtext} uzavřen do složených závorek (tj.~za tokenem \p{verbtext} následuje otevírací závorka), nebo zda je argumentem jediný token neuzavřený do složených závorek (v~tomto případě samozřejmě nemůže nastat situace, že by argument obsahoval verbatim text). Na základě toho se pak provede buď makro \p{vt@@t}, nebo makro \p{vt@t}.\par
+  V~makru \p{vt@@t} se pomocí \p{bgroup} otevře skupina, která se pak uzavře uživatelovou pravou závorkou. Nastaví se, že po uzavření této skupiny se provede \p{vtend}. Konstrukce \p{let}\p{next} odstraní uživatelovu levou závorku. Poté se běžným způsobem načte a zpracuje vnitřek uživatelových složených závorek.\par
+  Makro \p{vt@t} by mělo provést totéž, avšak bez nutnosti práce se skupinami. Pro stejnou funkci jako makro \p{vt@@t} by stačilo definovat \texttt{\char`\\def\char`\\vt@t\char`\#1\char`\{\char`\#1\char`\\vtend\char`\}}.\par
+  Autor zřejmě chtěl ukázat, že je možné definovat různé chování makra na základě způsobu jeho zavolání. (pozn.~překl.)}
+
+Jednoduché použití makra \p{verbtext} může být
+\begin{Verbatim}
+\verbtext{Argument makra \verb-\verbtext- může
+  obsahovat \verb-\verb- text.}
+\end{Verbatim}
+s~očekávaným výsledkem
+$$\hbox{\verbtext{Argument makra \verb-\verbtext- může obsahovat \verb-\verb- text.}}$$
+
+Následující kód ukazuje použití maker \p{vtintro} a \p{vtend} pro sazbu textu kapitálkami.
+
+\begin{Verbatim}
+\makeatletter
+\newcommand*{\fred}[1][\@empty]{Frederick%
+  \ifx\@empty #1\else~#1\fi}
+\makeatother
+\def\vtintro{\begingroup\scshape}
+\def\vtend{\endgroup}
+\verbtext{Makro \verb-\fred[III]-
+  vypíše \uv{\fred[III]}, zatímco makro
+  \verb-\fred- vypíše pouze \uv{\fred}.}
+\end{Verbatim}
+
+\makeatletter
+\newcommand*{\fred}[1][\@empty]{Frederick%
+  \ifx\@empty #1\else~#1\fi}
+\makeatother
+\def\vtintro{\begingroup\scshape}
+\def\vtend{\endgroup}
+\verbtext{Makro \verb-\fred[III]-
+  vypíše \uv{\fred[III]}, zatímco makro
+  \verb-\fred- vypíše pouze \uv{\fred}.}
+
+V~tomto konkrétním příkladě by šlo jednodušeji psát
+\begin{Verbatim}
+{\scshape\verbtext{...}}
+\end{Verbatim}
+a nemuseli jsme se vůbec zatěžovat makry \p{vtintro} a \p{vtend}. Nicméně se určitě najdou situace, kdy se tato makra budou hodit.
+
+\basnicka{Wickedness is always easier than virtue;\\
+    for it takes a short cut to everything.}
+  {\noindent}{Samuel Johnson}
+
+
+\section{Zkracování textu}
+
+Další z~dotazů na \ctt\ se týkal problému, kdy je třeba dlouhý text zkrátit například na dva nebo tři řádky.
+
+Již v~tu dobu existoval balíček \soub{truncate} Donalda Arseneaua~\cite{1}, který umožňuje zkrátit text na danou šířku. Na konci zkráceného textu se vytiskne~\uv{\ldots} (\p{ldots}), případně jiná značka, aby se čtenář dozvěděl, že text ještě pokračuje.
+Například
+\begin{Verbatim}
+\truncate{0.9\columnwidth}{Balíček \textsf{truncate} definuje
+  makro pro zkracování textu tak, aby nepřekročil zadanou šířku.}
+\end{Verbatim}
+\noindent
+vysází
+$$\hbox{%
+\truncate{0.9\columnwidth}{Balíček \textsf{truncate} definuje makro
+  pro zkracování textu tak, aby nepřekročil zadanou šířku.}%
+  }$$
+
+Nicméně dotaz se týkal vertikální analogie makra \p{truncate}. V~odpovědi~\cite{2} na dotaz Donald definoval makro \p{vtruncate} následovně.
+\begin{Verbatim}[commandchars=/()]
+\newsavebox\descbox
+\newsavebox\partialbox
+\newcommand{\vtruncate}[2]{%
+  \setbox\descbox\vbox{{#2\par}}%
+  \setbox\partialbox\vsplit\descbox to #1\relax
+  \vtop{\unvbox\partialbox}%/label(l2)
+  % or use
+  % \par\unvbox\partialbox/label(l1)
+  }
+\end{Verbatim}
+\noindent
+Makro má dva argumenty. Druhým argumentem je text, který se zkrátí na výšku danou prvním argumentem.
+
+V~další odpovědi~\cite{3} Will Robertson definoval prostředí \texttt{cutlines}.
+\begin{Verbatim}
+\makeatletter
+\newbox\cut@desc
+\newenvironment{cutlines}[1][2]{%
+  \@tempcnta=#1\relax
+  \setbox\cut@desc\vbox\bgroup
+  \parskip=0pt}{%
+  \egroup
+  \vsplit\cut@desc to \@tempcnta\baselineskip}
+\makeatother
+\end{Verbatim}
+\noindent
+Prostředí má jeden nepovinný argument (uzavřený do hranatých závorek), který udává, na kolik řádků se má text uvnitř prostředí zkrátit.
+
+\penalty-1000
+Vyzkoušel jsem obě dvě řešení a narazil jsem na následující možné problémy.
+\begin{enumerate}
+\item Textový argument makra \p{vtruncate} nemůže obsahovat žádný verbatim text. (To nemusí až tolik vadit.)
+\item Jestliže v~prostředí \texttt{cutlines} je zadaný počet řádků větší než počet řádků textu, potom je pod text vložena vertikální mezera taková, aby celková výška odpovídala zadanému počtu řádků.
+\item V~obou řešeních se stává, že výsledná výška je jiná, než bylo zadáno. Vždy se však liší maximálně o~jeden řádek. Zdá se, že \texttt{cutlines} je přesnější než \p{vtruncate}.
+\item Zkrácený text je umístěn ve \p{vbox}u, v~němž nemůže dojít ke stránkovému zlomu.
+\end{enumerate}
+
+Po dlouhém ladění jsem dospěl k~definici prostředí \texttt{vcutlines}, které je kombinací obou řešení a které řeší první dva problémy a možná i~třetí problém. Čtvrtý problém se týká všech řešení.\footnote{I~původní článek obsahoval řádek~\ref{l1}. Pokud by se tento řádek použil namísto řádků~\ref{l2} a~\ref{l3}, pak by ke čtvrtému problému nedošlo. (pozn.~překl.)}
+Prostředí \texttt{vcutlines} má jeden nepovinný argument, který udává, na jakou výšku se má text uvnitř prostředí zkrátit.
+
+
+\newsavebox\descbox
+\newsavebox\partialbox
+\newlength{\vcutl}% for the limit height
+\newlength{\Vcutl}% height of full text
+\newenvironment{vcutlines}[1][2\baselineskip]{%
+  \setlength{\vcutl}{#1}%
+  \setbox\descbox\vbox\bgroup
+  \parskip=0pt\relax
+  }{%
+  \egroup
+  \Vcutl=\ht\descbox
+  \advance\Vcutl \dp\descbox
+  \setbox\partialbox\vsplit\descbox to \vcutl\relax
+  \vtop{\unvbox\partialbox}
+  \ifdim \vcutl<\Vcutl \vtruncont \fi}
+\newcommand*{\vtruncont}{\noindent\strut\ldots}
+
+\begin{Verbatim}[commandchars=/()]
+\newsavebox\descbox
+\newsavebox\partialbox
+\newlength{\vcutl}% for the limit height
+\newlength{\Vcutl}% height of full text
+\newenvironment{vcutlines}[1][2\baselineskip]{%
+  \setlength{\vcutl}{#1}%
+  \setbox\descbox\vbox\bgroup
+  \parskip=0pt\relax
+  }{%
+  \egroup
+  \Vcutl=\ht\descbox
+  \advance\Vcutl \dp\descbox
+  \setbox\partialbox\vsplit\descbox to \vcutl\relax
+  \vtop{\unvbox\partialbox}/label(l3)
+  \ifdim \vcutl<\Vcutl \vtruncont \fi}
+\newcommand*{\vtruncont}{\noindent\strut\ldots}
+\end{Verbatim}
+
+V~následujících příkladech pro testování použijeme text
+\begin{Verbatim}
+{\itshape Donald Arseneau vytvořil makro \verb-\vtruncate- a
+Will Robertson vytvořil prostředí \verb-cutlines-. Obě řešení
+zkrátí text, pokud by po vysázení měl větší než zadanou výšku.
+V~tomto článku je vytvořeno nové prostředí \verb-vcutlines-,
+které je kombinací obou předchozích řešení.}
+\end{Verbatim}
+\noindent
+který obsahuje i~několik verbatim textů.
+
+\penalty-1000
+
+Pro začátek vyzkoušejme prostředí \texttt{vcutlines} s~omezením na 20~řádků (tj.~na výšku \texttt{20}\p{baselineskip}).
+
+\begin{vcutlines}[20\baselineskip]
+{\itshape Donald Arseneau vytvořil makro \verb-\vtruncate- a Will Robertson vytvořil prostředí \verb-cutlines-. Obě řešení zkrátí text, pokud by po vysázení měl větší než zadanou výšku. V~tomto článku je vytvořeno nové prostředí \verb-vcutlines-, které je kombinací obou předchozích řešení.}
+\end{vcutlines}
+
+\smallskip
+
+A nyní stejný text s~omezením na 3~řádky.
+
+\begin{vcutlines}[3\baselineskip]
+{\itshape Donald Arseneau vytvořil makro \verb-\vtruncate- a Will Robertson vytvořil prostředí \verb-cutlines-. Obě řešení zkrátí text, pokud by po vysázení měl větší než zadanou výšku. V~tomto článku je vytvořeno nové prostředí \verb-vcutlines-, které je kombinací obou předchozích řešení.}
+\end{vcutlines}
+
+\smallskip
+
+Jestliže dojde ke zkrácení textu, vloží se na konec prostředí makro \p{vtruncont}, které implicitně vloží řádek obsahující pouze~\uv{\ldots} (\p{ldots}). Pro zjištění, zda došlo ke zkrácení textu, se výška celého vysázeného textu porovnává se zadanou výškou.
+
+\renewcommand*{\vtruncont}{}
+Makro \p{vtruncont} můžeme například nadefinovat na nic.
+\begin{Verbatim}
+\renewcommand*{\vtruncont}{}
+\end{Verbatim}
+\noindent
+čímž dostaneme
+
+\begin{vcutlines}[3\baselineskip]
+{\itshape Donald Arseneau vytvořil makro \verb-\vtruncate- a Will Robertson vytvořil prostředí \verb-cutlines-. Obě řešení zkrátí text, pokud by po vysázení měl větší než zadanou výšku. V~tomto článku je vytvořeno nové prostředí \verb-vcutlines-, které je kombinací obou předchozích řešení.}
+\end{vcutlines}
+
+\smallskip\noindent
+V~tom případě se ale čtenář nedozví, zda text ještě pokračuje, nebo ne.
+
+\nocite{*}
+\begingroup
+\section*{Odkazy}
+\sloppy
+\AtNextBibliography{\small}
+\printbibliography[heading=none]
+\endgroup
+
+\begin{summary}
+This paper shows several ways in \LaTeX\ how to use verbatim text within argument of some macros. We also show how to truncate text to a given width or height.
+
+\keywords: Macros, verbatim arguments, truncating text, \LaTeX
+\end{summary}
+
+\end{document}
+%23456789012345678901234567890123456789012345678901234567890123

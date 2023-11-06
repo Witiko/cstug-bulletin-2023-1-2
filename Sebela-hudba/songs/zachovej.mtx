@@ -1,0 +1,24 @@
+%%\catcode`\á\active \defá{\'{a}}
+%%\catcode`\č\active \defč{\v{c}}
+%%\catcode`\ě\active \defě{\v{e}}
+%%\catcode`\ř\active \defř{\v{r}}
+%%\catcode`\í\active \defí{\'{i}}
+%%\catcode`\Š\active \defŠ{\v{S}}
+%%\catcode`\ť\active \defť{\v{t}}
+%%\catcode`\ž\active \defž{\v{z}}
+Title: Bože, cos ráčil
+Composer: V. Kment
+Poet: V. Šťastný
+Sharps: 1
+Space: 7
+Style: Singer Organ
+Organ: Voices RH LH,Ped; Clefs G F; Continuo
+Width: 150mm
+
+a a8 g  f4 f             | f8 f e f      a4 g   |
+L: 1. Bo-že, cos rá-čil    před ti-sí-ci ro-ky
+L: 2. Na ve-le-hra-dě      brat-ři ze So-lu-ně,
+L: 3. Ja-zy-kem rod-ným    Bo-ží chvá-lu pě-li,
+f  e8 ( d  d4 ) e        | ds        c8 d f4  e |
+d+ c8    b  a2           | b2             c4n b |
+d2d         c4n          | [ b8 a+ ] g8 f e2    |

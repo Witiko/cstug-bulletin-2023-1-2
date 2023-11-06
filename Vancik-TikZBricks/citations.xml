@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<citation_list xmlns:bltx="http://biblatex-biber.sourceforge.net/biblatexml">
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Sam</given_name>
+        <surname>Carter</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>Bricks and jigsaw pieces</article_title>
+    <additionalcontent>
+      <url cited="2022-11-23">https://youtu.be/rplZ4zZ2IuE</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Scott</given_name>
+        <surname>Pakin</surname>
+      </person_name>
+    </contributors>
+    <cYear>2021</cYear>
+    <article_title>img2bricks</article_title>
+    <additionalcontent>
+      <url cited="2023-04-30">https://github.com/samcarter/TikZbricks/blob/main/img2bricks</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Sam</given_name>
+        <surname>Carter</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>TikZbricks</article_title>
+    <additionalcontent>
+      <url cited="2023-02-13">https://tug.org/tug2022/assets/served/samcarter-TUG2022-samcarter-bricks-bricks.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Sam</given_name>
+        <surname>Carter</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>TikZbricks</article_title>
+    <additionalcontent>
+      <url cited="2022-11-23">https://ctan.org/pkg/tikzbricks</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Sam</given_name>
+        <surname>Carter</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>The jigsaw package</article_title>
+    <additionalcontent>
+      <url cited="2023-02-13">https://tug.org/tug2022/assets/served/samcarter-TUG2022-samcarter-bricks-jigsaw.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Sam</given_name>
+        <surname>Carter</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>jigsaw</article_title>
+    <additionalcontent>
+      <url cited="2022-11-23">https://ctan.org/pkg/jigsaw</url>
+    </additionalcontent>
+  </citation>
+</citation_list>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<citation_list xmlns:bltx="http://biblatex-biber.sourceforge.net/biblatexml">
+  <citation>
+    <doi>10.5300/2022-1-4/11</doi>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Vít</given_name>
+        <surname>Novotný</surname>
+      </person_name>
+    </contributors>
+    <cYear>2021</cYear>
+    <article_title>Konverze Zpravodaje CSTUGu pro Českou digitální matematickou knihovnu (DML-CZ) Co, proč a jak?</article_title>
+    <additionalcontent>
+      <url>https://www.cstug.cz/informace/zpravy/2021-02-06-valne-shromazdeni-2020/files/novotny-konverze-2021-03-06.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <cYear>2023</cYear>
+    <article_title>Zpravodaj CSTUG</article_title>
+    <additionalcontent>
+      <url>https://www.dml.cz/handle/10338.dmlcz/148724</url>
+    </additionalcontent>
+  </citation>
+</citation_list>

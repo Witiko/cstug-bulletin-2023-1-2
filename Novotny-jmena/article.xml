@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article doi="3" language="cs" publication_type="full_text"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+  <titles>
+    <title>Nápadovník jmen pro tvůrčí psaní v <LuaTeX/>u</title>
+  </titles>
+  <contributors>
+    <person_name contributor_role="author" sequence="first">
+      <given_name>Vít</given_name>
+      <surname>Starý Novotný</surname>
+    </person_name>
+  </contributors>
+  <pages>
+    <first_page>3</first_page>
+    <last_page>38</last_page>
+  </pages>
+  <additional-content>
+    <abstract>
+      <para>
+        Známý výrok informatika Phila Karltona říká, že na informatice jsou obtížné pouze dvě věci: vyprazdňování cache a přidělování jmen. Své o tom vědí i spisovatelé, kteří musí kromě příběhu a světa vymyslet jména všech svých příběhových postav. V tomto článku vyvineme jazykový model, který spisovatelům umožní automaticky generovat jména postav při tvůrčím psaní v Lua<TeX/>u. Kromě pomoci při tvůrčím psaní si představíme i další možná použití jazykových modelů v Lua<TeX/>u, jako je automatické přepínání vzorů dělení slov podle aktuálního jazyka a generování výplňového textu. <TeX/>nicky zaměřeným čtenářům článek poslouží jako prvotní seznámení s programovacími jazyky Lua a expl3 a s <LaTeX/>ovým balíčkem xparse pro přípravu uživatelských rozhraní.
+      </para>
+      <keywords>
+        tvůrčí psaní, trie, jazykové modely, <LuaTeX/>, Lua, expl3, xparse
+      </keywords>
+    </abstract>
+    <title>Character Name Generator for Creative Writing in <LuaTeX/></title>
+    <abstract>
+      <para>
+        A famous dictum of the computer scientist Phil Karlton says that there are only two difficult things in computer science: cache invalidation and naming things. This is also true in creative writing, where authors have to come up not just with a story and a setting but also the names of all their fictional characters. In this article, we develop a language model in <LuaTeX/>, which allows authors to automatically generate names for their characters. Besides creative writing, we also discuss other uses of language models in <LuaTeX/>, namely the automatic switching of hyphenation patterns based on the current language and blind text generation. For the <TeX/>nically-minded users, the article acts as an introduction to the programming languages of Lua and expl3, and also the xparse <LaTeX/> package for defining document commands in <LaTeX/>.
+      </para>
+      <keywords>
+        creative writing, trie, language models, <LuaTeX/>, Lua, expl3, xparse
+      </keywords>
+    </abstract>
+  </additional-content>
+  <xi:include href="citations.xml"/>
+</article>

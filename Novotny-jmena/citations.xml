@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<citation_list xmlns:bltx="http://biblatex-biber.sourceforge.net/biblatexml">
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Donald</given_name>
+        <surname>Knuth</surname>
+      </person_name>
+    </contributors>
+    <cYear>1997</cYear>
+    <isbn media_type="print">0-201-89685-0</isbn>
+    <volume_title>The Art of Computer Programming Volume 3: Sorting and Searching</volume_title>
+    <edition_number>2</edition_number>
+    <article_title>6.3: Digital Searching</article_title>
+  </citation>
+  <citation>
+    <article_title>Check out this transparent Huckleberry Hound hello PNG image</article_title>
+    <additionalcontent>
+      <url cited="2023-02-22">https://cartoongoodies.com/png_images/huckleberry-hound-hello/</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Josef</given_name>
+        <surname>Čapek</surname>
+      </person_name>
+    </contributors>
+    <cYear>1972</cYear>
+    <edition_number>13</edition_number>
+    <article_title>Povídání o pejskovi a kočičce: jak spolu hospodařili a ještě o všelijakých jiných věcech</article_title>
+  </citation>
+  <citation>
+    <article_title>GoGEN Maxipes Fík: Česká značka elektroniky pro děti</article_title>
+    <additionalcontent>
+      <url cited="2023-02-22">https://www.gogen.cz/gogen-maxipes-fik/</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <journal_title>IEEE Transactions on Acoustics, Speech, and Signal Processing</journal_title>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>S. M.</given_name>
+        <surname>Katz</surname>
+      </person_name>
+    </contributors>
+    <volume>35</volume>
+    <issue>3</issue>
+    <first_page>400</first_page>
+    <cYear>1987</cYear>
+    <article_title>Estimation of probabilities from sparse data for the language model component of a speech recognizer</article_title>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Vít</given_name>
+        <surname>Novotný</surname>
+      </person_name>
+    </contributors>
+    <cYear>2023</cYear>
+    <article_title>Nápadovník jmen postav pro tvůrčí psaní v LuaTeXu: Release The latest version</article_title>
+    <additionalcontent>
+      <url cited="2023-05-03">https://github.com/witiko/character-name-generator-for-creative-writing-in-luatex/releases/tag/latest</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Roberto</given_name>
+        <surname>Ierusalimschy</surname>
+      </person_name>
+    </contributors>
+    <cYear>2016</cYear>
+    <isbn media_type="print">978-85-903798-6-7</isbn>
+    <edition_number>4</edition_number>
+    <article_title>Programming in Lua</article_title>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Roberto</given_name>
+        <surname>Ierusalimschy</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>
+          Luiz
+          Henrique
+        </given_name>
+        <surname>Figueiredo</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Waldemar</given_name>
+        <surname>Celes</surname>
+      </person_name>
+    </contributors>
+    <cYear>2020</cYear>
+    <article_title>Lua 5.3 Reference Manual</article_title>
+    <additionalcontent>
+      <url cited="2023-03-10">https://www.lua.org/manual/5.3/manual.html</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>W. H.</given_name>
+        <surname>Press</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>S. A.</given_name>
+        <surname>Teukolsky</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>W. T.</given_name>
+        <surname>Vetterling</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>B. P.</given_name>
+        <surname>Flannery</surname>
+      </person_name>
+    </contributors>
+    <cYear>2007</cYear>
+    <isbn media_type="print">978-0-521-88068-8</isbn>
+    <edition_number>3</edition_number>
+    <article_title>Numerical Recipes 3rd Edition: The Art of Scientific Computing</article_title>
+  </citation>
+  <citation>
+    <journal_title>Mathematics of Computation</journal_title>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Pierre</given_name>
+        <surname>L'ecuyer</surname>
+      </person_name>
+    </contributors>
+    <volume>68</volume>
+    <issue>225</issue>
+    <first_page>249</first_page>
+    <cYear>1999</cYear>
+    <article_title>Tables of linear congruential generators of different sizes and good lattice structure</article_title>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <surname>The LaTeX Project</surname>
+      </person_name>
+    </contributors>
+    <cYear>2023</cYear>
+    <article_title>The LaTeX3 Interfaces</article_title>
+    <additionalcontent>
+      <url cited="2023-04-09">http://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Tereza</given_name>
+        <surname>Vrabcová</surname>
+      </person_name>
+    </contributors>
+    <cYear>2023</cYear>
+    <article_title>Model pro automatické skloňování českých jmen v LuaTeXu: Release The latest version</article_title>
+    <additionalcontent>
+      <url cited="2023-05-03">https://github.com/xvrabcov/declension_names/releases/tag/latest</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Christopher D.</given_name>
+        <surname>Manning</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Prabhakar</given_name>
+        <surname>Raghavan</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Hinrich</given_name>
+        <surname>Schütze</surname>
+      </person_name>
+    </contributors>
+    <cYear>2008</cYear>
+    <isbn media_type="print">0-521-86571-9</isbn>
+    <article_title>Introduction to Information Retrieval</article_title>
+    <additionalcontent>
+      <url>https://nlp.stanford.edu/IR-book/</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <journal_title>IBM J. Res. Dev</journal_title>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Michael O.</given_name>
+        <surname>Rabin</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Dana</given_name>
+        <surname>Scott</surname>
+      </person_name>
+    </contributors>
+    <volume>3</volume>
+    <issue>2</issue>
+    <first_page>114</first_page>
+    <cYear>1959</cYear>
+    <article_title>Finite automata and their decision problems</article_title>
+  </citation>
+  <citation>
+    <issn media_type="print">2336-4289</issn>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Vít</given_name>
+        <surname>Novotný</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Marie</given_name>
+        <surname>Stará</surname>
+      </person_name>
+      <person_name contributor_role="editor" sequence="additional">
+        <given_name>Aleš</given_name>
+        <surname>Horák</surname>
+      </person_name>
+      <person_name contributor_role="editor" sequence="additional">
+        <given_name>Pavel</given_name>
+        <surname>Rychlý</surname>
+      </person_name>
+      <person_name contributor_role="editor" sequence="additional">
+        <given_name>Adam</given_name>
+        <surname>Rambousek</surname>
+      </person_name>
+    </contributors>
+    <cYear>2020</cYear>
+    <isbn media_type="print">978-80-263-1600-8</isbn>
+    <volume_title>Recent Advances in Slavonic Natural Language Processing</volume_title>
+    <article_title>Cthulhu Hails from Wales: N-gram Frequency Analysis of R'lyehian</article_title>
+    <additionalcontent>
+      <url>https://nlp.fi.muni.cz/raslan/2020/paper12.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Mark T.</given_name>
+        <surname>Hooker</surname>
+      </person_name>
+    </contributors>
+    <cYear>2012</cYear>
+    <isbn media_type="print">978-1-4776-6773-6</isbn>
+    <edition_number>1</edition_number>
+    <article_title>Tolkien and Welsh (Tolkien a Chymraeg): Essays on J. R. R. Tolkien's Use of Welsh in his Legendarium</article_title>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <surname>creativeblogger</surname>
+      </person_name>
+    </contributors>
+    <cYear>2017</cYear>
+    <article_title>Pokémon in Translation: Where Do Their Names Come From?</article_title>
+    <additionalcontent>
+      <url cited="2023-04-17">https://creativetranslation.com/blog-pokemon-names-in-translation/</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <surname>LuaTeX development team</surname>
+      </person_name>
+    </contributors>
+    <cYear>2023</cYear>
+    <article_title>LuaTeX Reference Manual</article_title>
+    <additionalcontent>
+      <url cited="2023-04-17">https://ctan.org/pkg/luatex</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <doi>10.5300/2019-1-4/73</doi>
+  </citation>
+  <citation>
+    <doi>10.5300/2020-3-4/118</doi>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Karel</given_name>
+        <surname>Čapek</surname>
+      </person_name>
+    </contributors>
+    <cYear>1933</cYear>
+    <edition_number>1</edition_number>
+    <article_title>Dášeňka čili život štěněte</article_title>
+  </citation>
+</citation_list>

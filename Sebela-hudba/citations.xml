@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<citation_list xmlns:bltx="http://biblatex-biber.sourceforge.net/biblatexml">
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Christopher</given_name>
+        <surname>Park</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Emily</given_name>
+        <surname>Park</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>Musical composition typesetting</article_title>
+    <additionalcontent>
+      <url cited="2022-11-12">https://youtu.be/bwbk2xiMLSg</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Jim</given_name>
+        <surname>Paterson</surname>
+      </person_name>
+    </contributors>
+    <article_title>A Short History of Musical Notation</article_title>
+    <additionalcontent>
+      <url cited="2023-03-08">https://www.mfiles.co.uk/music-notation-history.htm</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <surname>Tutteo Limited</surname>
+      </person_name>
+    </contributors>
+    <article_title>Flat: Number of measures per system and notes spacing</article_title>
+    <additionalcontent>
+      <url cited="2023-03-13">https://flat.io/help/en/music-notation-software/layout-measures</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Isaac</given_name>
+        <surname>Weiss</surname>
+      </person_name>
+      <person_name contributor_role="author" sequence="additional">
+        <given_name>Marc</given_name>
+        <surname>Sabatella</surname>
+      </person_name>
+    </contributors>
+    <cYear>2014</cYear>
+    <article_title>Export Selection File menu option</article_title>
+    <additionalcontent>
+      <url cited="2022-11-21">https://musescore.org/en/node/42336</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Oliver</given_name>
+        <surname>Vogel</surname>
+      </person_name>
+    </contributors>
+    <cYear>2021</cYear>
+    <article_title>MusixTeX: Using TeX to write polyphonic or instrumental music</article_title>
+    <additionalcontent>
+      <url cited="2022-11-21">https://ctan.org/pkg/musixtex</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Don</given_name>
+        <surname>Simons</surname>
+      </person_name>
+    </contributors>
+    <cYear>2022</cYear>
+    <article_title>PMX: a Preprocessor for MusiXTeX</article_title>
+    <additionalcontent>
+      <url cited="2022-11-22">https://ctan.org/pkg/pmx</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Dirk</given_name>
+        <surname>Laurie</surname>
+      </person_name>
+    </contributors>
+    <cYear>2019</cYear>
+    <article_title>M-Tx: Music from Text</article_title>
+    <additionalcontent>
+      <url cited="2022-11-21">https://ctan.org/pkg/m-tx</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Bob</given_name>
+        <surname>Tennent</surname>
+      </person_name>
+    </contributors>
+    <article_title>MusiXTeX and related software: Introduction</article_title>
+    <additionalcontent>
+      <url cited="2023-03-13">https://www.icking-music-archive.org/software/htdocs/Introduction.html</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <contributors>
+      <person_name contributor_role="author" sequence="first">
+        <given_name>Cornelius C.</given_name>
+        <surname>Noack</surname>
+      </person_name>
+    </contributors>
+    <cYear>2013</cYear>
+    <article_title>Typesetting music with PMX</article_title>
+    <additionalcontent>
+      <url cited="2023-03-13">http://icking-music-archive.org/software/pmx/pmxccn.pdf</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <article_title>Front-end Applications</article_title>
+    <additionalcontent>
+      <url cited="2023-03-13">https://lilypond.org/easier-editing.html</url>
+    </additionalcontent>
+  </citation>
+  <citation>
+    <doi>10.5300/2022-1-4/35</doi>
+  </citation>
+</citation_list>
