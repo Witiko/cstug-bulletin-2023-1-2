@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <title lang="cze">Sazba hudebních skladeb</title>
+  <title lang="eng">Musical Composition Typesetting</title>
+  <author order="1">Šebela, Karel</author>
+  <language>cze</language>
+  <keyword lang="cze">notový zápis</keyword>
+  <keyword lang="cze">MusiXTeX</keyword>
+  <keyword lang="cze">PMX</keyword>
+  <keyword lang="cze">M-Tx</keyword>
+  <keyword lang="cze">LilyPond</keyword>
+  <keyword lang="cze">MuseScore</keyword>
+  <keyword lang="cze">Flat</keyword>
+  <keyword lang="eng">sheet music</keyword>
+  <keyword lang="eng">music engraving</keyword>
+  <keyword lang="eng">MusiXTeX</keyword>
+  <keyword lang="eng">PMX</keyword>
+  <keyword lang="eng">M-Tx</keyword>
+  <keyword lang="eng">LilyPond</keyword>
+  <keyword lang="eng">MuseScore</keyword>
+  <keyword lang="eng">Flat</keyword>
+  <summary lang="cze">TeX je užitečný nástroj pro sazbu textu, ale nemá v základu dobrou podporu pro sazbu skladeb. Na konferenci TUG 2022 zazněla přednáška o sazbě not, která porovnávala sazbu pomocí balíku MusiXTeX s nástroji Musescore a Flat, ale nezmínila preprocesory PMX a M-Tx, které sazbu zjednodušují. V tomto článku porovnám sazbu nástrojem MusiXTeX s jeho preprocesory a popíšu jejich užití. Dále rozeberu začlenění notových značek do textu odstavce. Po přečtení článku bude čtenář schopný vytvořit jednoduchý krátký úryvek hudebního díla a začlenit jej do TeXového dokumentu, či doplnit psaný text notovými značkami.</summary>
+  <summary lang="eng">TeX is a useful tool for text typesetting; however, it doesn't feature a good support for composition typesetting at its core. The TUG 2022 conference featured a talk on notation typesetting which compared the MusiXTeX package with the MuseScore and Flat tools, but did not mention the PMX and M-Tx preprocessors. In this article, I compare typesetting using MusiXTeX and its preprocessors and describe its usage. In addition, I describe the incorporation of note symbols into a paragraph text. After reading the article, the reader will be able to create a short simple excerpt of a piece of music and incorporate it into a TeX document, as well as add musical symbols to a written text.</summary>
+  <lang_summary>cze</lang_summary>
+  <doi>10.5300/2023-1-2/39</doi>
+  <category>informatics</category>
+  <range_pages>39-47</range_pages>
+</article>

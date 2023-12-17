@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <title lang="cze">Mělo by to fungovat XIII</title>
+  <title lang="eng">It Might Work XIII</title>
+  <author order="1">Wilson, Peter</author>
+  <language>cze</language>
+  <keyword lang="cze">Makra</keyword>
+  <keyword lang="cze">verbatim argumenty</keyword>
+  <keyword lang="cze">zkracování textu</keyword>
+  <keyword lang="cze">LaTeX</keyword>
+  <keyword lang="eng">Macros</keyword>
+  <keyword lang="eng">verbatim arguments</keyword>
+  <keyword lang="eng">truncating text</keyword>
+  <keyword lang="eng">LaTeX</keyword>
+  <summary lang="cze">Článek ukazuje několik způsobů, jak lze v LaTeXu použít verbatim text uvnitř argumentu některých maker. Dále jsou ukázány možnosti, jak zkrátit sazbu textu na danou šířku či výšku.</summary>
+  <summary lang="eng">This paper shows several ways in LaTeX how to use verbatim text within argument of some macros. We also show how to truncate text to a given width or height.</summary>
+  <lang_summary>cze</lang_summary>
+  <doi>10.5300/2023-1-2/54</doi>
+  <category>informatics</category>
+  <range_pages>54-60</range_pages>
+</article>

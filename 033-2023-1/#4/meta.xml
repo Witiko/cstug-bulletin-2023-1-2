@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <title lang="eng">TeX Newbie Reports on the “Bricks and Jigsaw Pieces” Talk at TUG 2022</title>
+  <title lang="slo">Pohľad TeXového nováčika na prezentáciu „Bricks and Jigsaw Pieces“ z TUGu 2022</title>
+  <author order="1">Vančík, Matúš</author>
+  <language>slo</language>
+  <keyword lang="slo">TikZ</keyword>
+  <keyword lang="slo">TikZbricks</keyword>
+  <keyword lang="slo">jigsaw</keyword>
+  <keyword lang="eng">TikZ</keyword>
+  <keyword lang="eng">TikZbricks</keyword>
+  <keyword lang="eng">jigsaw</keyword>
+  <summary lang="eng">The article deals with TikZbricks and jigsaw packages: their use, design, and possible applications. I look at these aspects of the packages through my own experimentation as a newish TeX user and I show why such packages are needed in the world of TeX.</summary>
+  <summary lang="slo">V tomto článku sa bližšie pozrieme na dva nové LaTeXové balíčky, TikZbricks a jigsaw. Ako ešte len čerstvý používateľ TeXu by som chcel pomocou vlastných experimentov preskúmať dizajn, jednoduchosť práce s balíčkami ako aj možnosti uplatnenia. Nakoniec by som pomocou tohto článku chcel vyzdvihnúť, prečo sú takéto balíčky v TeXu potrebné.</summary>
+  <lang_summary>slo</lang_summary>
+  <doi>10.5300/2023-1-2/48</doi>
+  <category>informatics</category>
+  <range_pages>48-53</range_pages>
+</article>

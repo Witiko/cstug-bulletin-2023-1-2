@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references>
+  <reference id="1">
+    <prefix>[1]</prefix>
+    <title>Bricks and jigsaw pieces</title>
+    <authors>
+      <author>Carter, Sam</author>
+    </authors>
+    <URL>https://youtu.be/rplZ4zZ2IuE</URL>
+    <year>2022</year>
+    <suffix>[online]. YouTube, 2022-08-29 [cit. 2022-11-23]. Dostupné z: https://youtu.be/rplZ4zZ2IuE.</suffix>
+  </reference>
+  <reference id="2">
+    <prefix>[2]</prefix>
+    <title>img2bricks</title>
+    <authors>
+      <author>Pakin, Scott</author>
+    </authors>
+    <URL>https://github.com/samcarter/TikZbricks/blob/main/img2bricks</URL>
+    <year>2021</year>
+    <suffix>[online]. 2021-09-12. [cit. 2023-04-30]. Dostupné z: https://github.com/samcarter/TikZbricks/blob/main/img2bricks.</suffix>
+  </reference>
+  <reference id="3">
+    <prefix>[3]</prefix>
+    <title>TikZbricks</title>
+    <authors>
+      <author>Carter, Sam</author>
+    </authors>
+    <URL>https://tug.org/tug2022/assets/served/samcarter-TUG2022-samcarter-bricks-bricks.pdf</URL>
+    <year>2022</year>
+    <suffix>[online]. TUG, 2022-07-23 [cit. 2023-02-13]. Dostupné z: https://tug.org/tug2022/assets/served/samcarter-TUG2022-samcarter-bricks-bricks.pdf.</suffix>
+  </reference>
+  <reference id="4">
+    <prefix>[4]</prefix>
+    <title>TikZbricks</title>
+    <authors>
+      <author>Carter, Sam</author>
+    </authors>
+    <URL>https://ctan.org/pkg/tikzbricks</URL>
+    <year>2022</year>
+    <suffix>[online]. CTAN, 2022-07-21 [cit. 2022-11-23]. Dostupné z: https://ctan.org/pkg/tikzbricks.</suffix>
+  </reference>
+  <reference id="5">
+    <prefix>[5]</prefix>
+    <title>The jigsaw package</title>
+    <authors>
+      <author>Carter, Sam</author>
+    </authors>
+    <URL>https://tug.org/tug2022/assets/served/samcarter-TUG2022-samcarter-bricks-jigsaw.pdf</URL>
+    <year>2022</year>
+    <suffix>[online]. TUG, 2022-07-23 [cit. 2023-02-13]. Dostupné z: https://tug.org/tug2022/assets/served/samcarter-TUG2022-samcarter-bricks-jigsaw.pdf.</suffix>
+  </reference>
+  <reference id="6">
+    <prefix>[6]</prefix>
+    <title>jigsaw</title>
+    <authors>
+      <author>Carter, Sam</author>
+    </authors>
+    <URL>https://ctan.org/pkg/jigsaw</URL>
+    <year>2022</year>
+    <suffix>[online]. CTAN, 2022-07-18 [cit. 2022-11-23]. Dostupné z: https://ctan.org/pkg/jigsaw.</suffix>
+  </reference>
+</references>
