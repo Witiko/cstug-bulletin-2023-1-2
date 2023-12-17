@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references>
+  <reference id="1">
+    <prefix>[1]</prefix>
+    <title>6.3: Digital Searching</title>
+    <authors>
+      <author>Knuth, Donald</author>
+    </authors>
+    <ISBN>0-201-89685-0</ISBN>
+    <edition>2</edition>
+    <year>1997</year>
+    <suffix>In: The Art of Computer Programming Volume 3: Sorting and Searching. 2. vyd. Addison-Wesley, 1997, s. 492. ISBN 0-201-89685-0.</suffix>
+  </reference>
+  <reference id="2">
+    <prefix>[2]</prefix>
+    <title>Check out this transparent Huckleberry Hound hello PNG image</title>
+    <authors>
+      <author>Cartoon Goodies</author>
+    </authors>
+    <URL>https://cartoongoodies.com/png_images/huckleberry-hound-hello/</URL>
+    <suffix>[online]. [cit. 2023-02-22]. Dostupné z: https://cartoongoodies.com/png_images/huckleberry-hound-hello/.</suffix>
+  </reference>
+  <reference id="3">
+    <prefix>[3]</prefix>
+    <title>Povídání o pejskovi a kočičce: jak spolu hospodařili a ještě o všelijakých jiných věcech</title>
+    <authors>
+      <author>Čapek, Josef</author>
+    </authors>
+    <edition>13</edition>
+    <year>1972</year>
+    <suffix>13. vyd. Albatros, 1972.</suffix>
+  </reference>
+  <reference id="4">
+    <prefix>[4]</prefix>
+    <title>GoGEN Maxipes Fík: Česká značka elektroniky pro děti</title>
+    <authors>
+      <author>GoGEN</author>
+    </authors>
+    <URL>https://www.gogen.cz/gogen-maxipes-fik/</URL>
+    <suffix>[online]. [cit. 2023-02-22]. Dostupné z: https://www.gogen.cz/gogen-maxipes-fik/.</suffix>
+  </reference>
+  <reference id="5">
+    <prefix>[5]</prefix>
+    <title>Estimation of probabilities from sparse data for the language model component of a speech recognizer</title>
+    <authors>
+      <author>Katz, S. M.</author>
+    </authors>
+    <booktitle>IEEE Transactions on Acoustics, Speech, and Signal Processing</booktitle>
+    <number>3</number>
+    <volume>35</volume>
+    <year>1987</year>
+    <suffix>IEEE Transactions on Acoustics, Speech, and Signal Processing. 1987, roč. 35, č. 3, s. 400–401.</suffix>
+  </reference>
+  <reference id="6">
+    <prefix>[6]</prefix>
+    <title>Nápadovník jmen postav pro tvůrčí psaní v LuaTeXu: Release The latest version</title>
+    <authors>
+      <author>Novotný, Vít</author>
+    </authors>
+    <URL>https://github.com/witiko/character-name-generator-for-creative-writing-in-luatex/releases/tag/latest</URL>
+    <year>2023</year>
+    <suffix>[online]. GitHub, 2023-05-03 [cit. 2023-05-03]. Dostupné z: https://github.com/witiko/character-name-generator-for-creative-writing-in-luatex/releases/tag/latest.</suffix>
+  </reference>
+  <reference id="7">
+    <prefix>[7]</prefix>
+    <title>Programming in Lua</title>
+    <authors>
+      <author>Ierusalimschy, Roberto</author>
+    </authors>
+    <ISBN>978-85-903798-6-7</ISBN>
+    <edition>4</edition>
+    <year>2016</year>
+    <suffix>4. vyd. Lua.org, 2016. ISBN 978-8590379867.</suffix>
+  </reference>
+  <reference id="8">
+    <prefix>[8]</prefix>
+    <title>Lua 5.3 Reference Manual</title>
+    <authors>
+      <author>Ierusalimschy, Roberto</author>
+      <author>Figueiredo, Luiz Henrique</author>
+      <author>Celes, Waldemar</author>
+    </authors>
+    <URL>https://www.lua.org/manual/5.3/manual.html</URL>
+    <year>2020</year>
+    <suffix>[online]. 2020-07-14. [cit. 2023-03-10]. Dostupné z: https://www.lua.org/manual/5.3/manual.html.</suffix>
+  </reference>
+  <reference id="9">
+    <prefix>[9]</prefix>
+    <title>Numerical Recipes 3rd Edition: The Art of Scientific Computing</title>
+    <authors>
+      <author>Press, W. H.</author>
+      <author>Teukolsky, S. A.</author>
+      <author>Vetterling, W. T.</author>
+      <author>Flannery, B. P.</author>
+    </authors>
+    <ISBN>978-0-521-88068-8</ISBN>
+    <edition>3</edition>
+    <year>2007</year>
+    <suffix>3. vyd. Cambridge University Press, 2007. ISBN 978-0-521-88068-8.</suffix>
+  </reference>
+  <reference id="10">
+    <prefix>[10]</prefix>
+    <title>Tables of linear congruential generators of different sizes and good lattice structure</title>
+    <authors>
+      <author>L'ecuyer, Pierre</author>
+    </authors>
+    <booktitle>Mathematics of Computation</booktitle>
+    <number>225</number>
+    <volume>68</volume>
+    <year>1999</year>
+    <suffix>Mathematics of Computation. 1999, roč. 68, č. 225, s. 249–260.</suffix>
+  </reference>
+  <reference id="11">
+    <prefix>[11]</prefix>
+    <title>The LaTeX3 Interfaces</title>
+    <authors>
+      <author>The LaTeX Project</author>
+    </authors>
+    <URL>http://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf</URL>
+    <year>2023</year>
+    <suffix>[online]. CTAN, 2023-03-30 [cit. 2023-04-09]. Dostupné z: http://mirrors.ctan.org/macros/latex/contrib/l3kernel/interface3.pdf.</suffix>
+  </reference>
+  <reference id="12">
+    <prefix>[12]</prefix>
+    <title>Model pro automatické skloňování českých jmen v LuaTeXu: Release The latest version</title>
+    <authors>
+      <author>Vrabcová, Tereza</author>
+    </authors>
+    <URL>https://github.com/xvrabcov/declension_names/releases/tag/latest</URL>
+    <year>2023</year>
+    <suffix>[online]. GitHub, 2023-05-03 [cit. 2023-05-03]. Dostupné z: https://github.com/xvrabcov/declension_names/releases/tag/latest.</suffix>
+  </reference>
+  <reference id="13">
+    <prefix>[13]</prefix>
+    <title>Introduction to Information Retrieval</title>
+    <authors>
+      <author>Manning, Christopher D.</author>
+      <author>Raghavan, Prabhakar</author>
+      <author>Schütze, Hinrich</author>
+    </authors>
+    <ISBN>0-521-86571-9</ISBN>
+    <URL>https://nlp.stanford.edu/IR-book/</URL>
+    <year>2008</year>
+    <suffix>Cambridge University Press, 2008. ISBN 0521865719. Dostupné také z: https://nlp.stanford.edu/IR-book/.</suffix>
+  </reference>
+  <reference id="14">
+    <prefix>[14]</prefix>
+    <title>Finite automata and their decision problems</title>
+    <authors>
+      <author>Rabin, Michael O.</author>
+      <author>Scott, Dana</author>
+    </authors>
+    <booktitle>IBM J. Res. Dev</booktitle>
+    <number>2</number>
+    <volume>3</volume>
+    <year>1959</year>
+    <suffix>IBM J. Res. Dev. 1959, roč. 3, č. 2, s. 114–125.</suffix>
+  </reference>
+  <reference id="15">
+    <prefix>[15]</prefix>
+    <title>Cthulhu Hails from Wales: N-gram Frequency Analysis of R'lyehian</title>
+    <authors>
+      <author>Novotný, Vít</author>
+      <author>Stará, Marie</author>
+    </authors>
+    <ISBN>978-80-263-1600-8</ISBN>
+    <ISSN>2336-4289</ISSN>
+    <URL>https://nlp.fi.muni.cz/raslan/2020/paper12.pdf</URL>
+    <year>2020</year>
+    <suffix>In: HORÁK, Aleš; RYCHLÝ, Pavel; RAMBOUSEK, Adam (ed.). Recent Advances in Slavonic Natural Language Processing. Tribun EU, 2020. ISBN 978-80-263-1600-8. ISSN 2336-4289. Dostupné také z: https://nlp.fi.muni.cz/raslan/2020/paper12.pdf.</suffix>
+  </reference>
+  <reference id="16">
+    <prefix>[16]</prefix>
+    <title>Tolkien and Welsh (Tolkien a Chymraeg): Essays on J. R. R. Tolkien's Use of Welsh in his Legendarium</title>
+    <authors>
+      <author>Hooker, Mark T.</author>
+    </authors>
+    <ISBN>978-1-4776-6773-6</ISBN>
+    <edition>1</edition>
+    <year>2012</year>
+    <suffix>1. vyd. Llyfrawr, 2012. ISBN 978-1477667736.</suffix>
+  </reference>
+  <reference id="17">
+    <prefix>[17]</prefix>
+    <title>Pokémon in Translation: Where Do Their Names Come From?</title>
+    <authors>
+      <author>creativeblogger</author>
+    </authors>
+    <URL>https://creativetranslation.com/blog-pokemon-names-in-translation/</URL>
+    <year>2017</year>
+    <suffix>[online]. 2017-08-11. [cit. 2023-04-17]. Dostupné z: https://creativetranslation.com/blog-pokemon-names-in-translation/.</suffix>
+  </reference>
+  <reference id="18">
+    <prefix>[18]</prefix>
+    <title>LuaTeX Reference Manual</title>
+    <authors>
+      <author>LuaTeX development team</author>
+    </authors>
+    <URL>https://ctan.org/pkg/luatex</URL>
+    <year>2023</year>
+    <suffix>[online]. CTAN, 2023-04-06 [cit. 2023-04-17]. Dostupné z: https://ctan.org/pkg/luatex.</suffix>
+  </reference>
+  <reference id="19">
+    <prefix>[19]</prefix>
+    <title>The Unreasonable Effectiveness of Pattern Generation</title>
+    <authors>
+      <author>Sojka, Petr</author>
+    </authors>
+    <ISSN>1211-6661</ISSN>
+    <URL>https://dx.doi.org/10.5300/2019-1-4/73</URL>
+    <number>1</number>
+    <pages>73-86</pages>
+    <publisher>Czech and Slovak TeX Users Group</publisher>
+    <year>2019</year>
+    <suffix>Zpravodaj CSTUGu. 2019, roč. 29, č. 1–4, s. 73–86. ISSN 1211-6661. Dostupné z DOI: 10.5300/2019-1-4/73.</suffix>
+  </reference>
+  <reference id="20">
+    <prefix>[20]</prefix>
+    <title>Towards New Czechoslovak Hyphenation Patterns</title>
+    <authors>
+      <author>Sojka, Petr</author>
+    </authors>
+    <ISSN>1211-6661</ISSN>
+    <URL>https://dx.doi.org/10.5300/2020-3-4/118</URL>
+    <number>3</number>
+    <pages>118-126</pages>
+    <publisher>Czech and Slovak TeX Users Group</publisher>
+    <year>2020</year>
+    <suffix>Zpravodaj CSTUGu. 2020, roč. 30, č. 3–4, s. 118–126. ISSN 1211-6661. Dostupné z DOI: 10.5300/2020-3-4/118.</suffix>
+  </reference>
+  <reference id="21">
+    <prefix>[21]</prefix>
+    <title>Dášeňka čili život štěněte</title>
+    <authors>
+      <author>Čapek, Karel</author>
+    </authors>
+    <edition>1</edition>
+    <year>1933</year>
+    <suffix>1. vyd. Fr. Borový, 1933.</suffix>
+  </reference>
+</references>

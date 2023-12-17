@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references>
+  <reference id="1">
+    <prefix>[1]</prefix>
+    <title>Glisterings</title>
+    <authors>
+      <author>Wilson, Peter</author>
+    </authors>
+    <URL>https://tug.org/TUGboat/tb32-3/tb102glister.pdf</URL>
+    <booktitle>TUGboat</booktitle>
+    <number>3</number>
+    <volume>32</volume>
+    <year>2011</year>
+    <suffix>[online]. 2011, roč. 32, č. 3, s. 339–341 [vid. 2011-12]. Dostupné z: https://tug.org/TUGboat/tb32-3/tb102glister.pdf.</suffix>
+  </reference>
+  <reference id="2">
+    <prefix>[2]</prefix>
+    <title>The TeXbook</title>
+    <authors>
+      <author>Knuth, Donald E.</author>
+    </authors>
+    <series>Computers &amp; Typesetting</series>
+    <volume>A</volume>
+    <year>1984</year>
+    <suffix>Sv. A. Reading, MA: Addison-Wesley, 1984. Computers &amp; Typesetting. V současnosti jsou dostupné 35. výtisk (měkká vazba, 2017) a 23. výtisk (pevná vazba, 2021).</suffix>
+  </reference>
+  <reference id="3">
+    <prefix>[3]</prefix>
+    <title>truncate.sty: Truncate text to a specified width</title>
+    <authors>
+      <author>Arseneau, Donald</author>
+    </authors>
+    <URL>https://ctan.org/pkg/truncate</URL>
+    <year>2001</year>
+    <suffix>[online]. CTAN, 2001 [vid. 2011-12]. Dostupné z: https://ctan.org/pkg/truncate. Verze 3.6.</suffix>
+  </reference>
+  <reference id="4">
+    <prefix>[4]</prefix>
+    <title>Re: How to limit/cut off text after a number of lines?</title>
+    <authors>
+      <author>Arseneau, Donald</author>
+    </authors>
+    <year>2008</year>
+    <suffix>comp.text.tex newsgroup, 2008-07-16.</suffix>
+  </reference>
+  <reference id="5">
+    <prefix>[5]</prefix>
+    <title>Re: How to limit/cut off text after a number of lines?</title>
+    <authors>
+      <author>Robertson, Will</author>
+    </authors>
+    <year>2008</year>
+    <suffix>comp.text.tex newsgroup, 2008-07-16.</suffix>
+  </reference>
+</references>

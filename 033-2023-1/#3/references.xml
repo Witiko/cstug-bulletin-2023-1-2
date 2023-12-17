@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references>
+  <reference id="1">
+    <prefix>[1]</prefix>
+    <title>Musical composition typesetting</title>
+    <authors>
+      <author>Park, Christopher</author>
+      <author>Park, Emily</author>
+    </authors>
+    <URL>https://youtu.be/bwbk2xiMLSg</URL>
+    <year>2022</year>
+    <suffix>[online]. 2022-07-24. [cit. 2022-11-12]. Dostupné z: https://youtu.be/bwbk2xiMLSg.</suffix>
+  </reference>
+  <reference id="2">
+    <prefix>[2]</prefix>
+    <title>A Short History of Musical Notation</title>
+    <authors>
+      <author>Paterson, Jim</author>
+    </authors>
+    <URL>https://www.mfiles.co.uk/music-notation-history.htm</URL>
+    <suffix>[online]. [cit. 2023-03-08]. Dostupné z: https://www.mfiles.co.uk/music-notation-history.htm.</suffix>
+  </reference>
+  <reference id="3">
+    <prefix>[3]</prefix>
+    <title>Flat: Number of measures per system and notes spacing</title>
+    <authors>
+      <author>Tutteo Limited</author>
+    </authors>
+    <URL>https://flat.io/help/en/music-notation-software/layout-measures</URL>
+    <suffix>[online]. [cit. 2023-03-13]. Dostupné z: https://flat.io/help/en/music-notation-software/layout-measures.</suffix>
+  </reference>
+  <reference id="4">
+    <prefix>[4]</prefix>
+    <title>Export Selection File menu option</title>
+    <authors>
+      <author>Weiss, Isaac</author>
+      <author>Sabatella, Marc</author>
+    </authors>
+    <URL>https://musescore.org/en/node/42336</URL>
+    <year>2014</year>
+    <suffix>[online]. 2014-12-26. [cit. 2022-11-21]. Dostupné z: https://musescore.org/en/node/42336. Feature request.</suffix>
+  </reference>
+  <reference id="5">
+    <prefix>[5]</prefix>
+    <title>MusixTeX: Using TeX to write polyphonic or instrumental music</title>
+    <authors>
+      <author>Vogel, Oliver</author>
+    </authors>
+    <year>2021</year>
+    <URL>https://ctan.org/pkg/musixtex</URL>
+    <suffix>[online]. 2021-08-29. Ver. 1.35 [cit. 2022-11-21]. Dostupné z Package documentation na https://ctan.org/pkg/musixtex.</suffix>
+  </reference>
+  <reference id="6">
+    <prefix>[6]</prefix>
+    <title>PMX: a Preprocessor for MusiXTeX</title>
+    <authors>
+      <author>Simons, Don</author>
+    </authors>
+    <year>2022</year>
+    <URL>https://ctan.org/pkg/pmx</URL>
+    <suffix>[online]. 2022-02-04. Ver. 2.98 [cit. 2022-11-22]. Dostupné z Package manual na https://ctan.org/pkg/pmx.</suffix>
+  </reference>
+  <reference id="7">
+    <prefix>[7]</prefix>
+    <title>M-Tx: Music from Text</title>
+    <authors>
+      <author>Laurie, Dirk</author>
+    </authors>
+    <year>2019</year>
+    <URL>https://ctan.org/pkg/m-tx</URL>
+    <suffix>[online]. 2019-01-15. Ver. 0.63c [cit. 2022-11-21]. Dostupné z Package documentation na https://ctan.org/pkg/m-tx.</suffix>
+  </reference>
+  <reference id="8">
+    <prefix>[8]</prefix>
+    <title>MusiXTeX and related software: Introduction</title>
+    <authors>
+      <author>Bob Tennent</author>
+    </authors>
+    <URL>https://www.icking-music-archive.org/software/htdocs/Introduction.html</URL>
+    <suffix>[online]. [cit. 2023-03-13]. Dostupné z: https://www.icking-music-archive.org/software/htdocs/Introduction.html.</suffix>
+  </reference>
+  <reference id="9">
+    <prefix>[9]</prefix>
+    <title>Typesetting music with PMX</title>
+    <authors>
+      <author>Noack, Cornelius C.</author>
+    </authors>
+    <URL>http://icking-music-archive.org/software/pmx/pmxccn.pdf</URL>
+    <year>2013</year>
+    <suffix>[online]. 2013-05. Ver. 2.821 [cit. 2023-03-13]. Dostupné z: http://icking-music-archive.org/software/pmx/pmxccn.pdf.</suffix>
+  </reference>
+  <reference id="10">
+    <prefix>[10]</prefix>
+    <title>Front-end Applications</title>
+    <authors>
+      <author>LilyPond</author>
+    </authors>
+    <URL>https://lilypond.org/easier-editing.html</URL>
+    <suffix>[online]. [cit. 2023-03-13]. Dostupné z: https://lilypond.org/easier-editing.html.</suffix>
+  </reference>
+  <reference id="11">
+    <prefix>[11]</prefix>
+    <title>Vysokoúrovňové jazyky pro TeX</title>
+    <authors>
+      <author>Novotný, Vít</author>
+    </authors>
+    <ISSN>1211-6661</ISSN>
+    <URL>https://dx.doi.org/10.5300/2022-1-4/35</URL>
+    <number>1</number>
+    <pages>35-48</pages>
+    <publisher>Czech and Slovak TeX Users Group</publisher>
+    <year>2022</year>
+    <suffix>Zpravodaj CSTUGu. 2022, roč. 32, č. 1–4, s. 35–48. Dostupné z DOI: 10.5300/2022-1-4/35.</suffix>
+  </reference>
+</references>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<references>
+  <reference id="1">
+    <prefix>[1]</prefix>
+    <title>Digital Archival of the CSTUG Bulletin</title>
+    <authors>
+      <author>Vrabcová, Tereza</author>
+    </authors>
+    <ISSN>1211-6661</ISSN>
+    <URL>https://dx.doi.org/10.5300/2022-1-4/11</URL>
+    <number>1</number>
+    <pages>11-17</pages>
+    <publisher>Czech and Slovak TeX Users Group</publisher>
+    <year>2022</year>
+    <suffix>Zpravodaj CSTUG. 2022, roč. 32, č. 1, 11–17. Dostupné z DOI: 10.5300/2022-1-4/11.</suffix>
+  </reference>
+  <reference id="2">
+    <prefix>[2]</prefix>
+    <title>Konverze Zpravodaje CSTUGu pro Českou digitální matematickou knihovnu (DML-CZ) Co, proč a jak?</title>
+    <authors>
+      <author>Novotný, Vít</author>
+    </authors>
+    <URL>https://www.cstug.cz/informace/zpravy/2021-02-06-valne-shromazdeni-2020/files/novotny-konverze-2021-03-06.pdf</URL>
+    <year>2021</year>
+    <suffix>2021-03. Dostupné také z: https://www.cstug.cz/informace/zpravy/2021-02-06-valne-shromazdeni-2020/files/novotny-konverze-2021-03-06.pdf.</suffix>
+  </reference>
+  <reference id="3">
+    <prefix>[3]</prefix>
+    <title>Zpravodaj CSTUG</title>
+    <authors>
+      <author>Československé sdružení uživatelů TeXu</author>
+    </authors>
+    <URL>https://www.dml.cz/handle/10338.dmlcz/148724</URL>
+    <year>2023</year>
+    <suffix>1991–2023. Dostupné také z: https://www.dml.cz/handle/10338.dmlcz/148724.</suffix>
+  </reference>
+</references>
